@@ -1,13 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <title>Redirecting...</title>
+    <meta charset="utf-8" />
+    <title>Redirecting to Portfolio...</title>
     <script type="text/javascript">
-      // This instantly redirects the user back to your root/home page
-      window.location.replace("/");
+      // GitHub Pages SPA smart redirect
+      // Translates path queries to HashRouter so direct deep links resolve accurately
+      (function () {
+        var path = window.location.pathname;
+        var search = window.location.search;
+        var hash = window.location.hash;
+        
+        // Remove trailing or leading slashes to normalize
+        var cleanPath = path.replace(/^\/+|\/+$/g, '');
+        
+        if (cleanPath) {
+          window.location.replace('/#/' + cleanPath + (search || '') + (hash || ''));
+        } else {
+          window.location.replace('/' + (search || '') + (hash || ''));
+        }
+      })();
     </script>
   </head>
-  <body>
+  <body style="background: #121212; color: #fff; font-family: sans-serif; display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0;">
+    <p>Redirecting to destination...</p>
   </body>
 </html>

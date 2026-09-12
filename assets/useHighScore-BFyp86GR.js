@@ -1,0 +1,1 @@
+import{a as o}from"./index-Ce6gr0I0.js";const h=r=>{const t=`portfolio_${r}_highscore`,[s,a]=o.useState(()=>parseInt(localStorage.getItem(t))||0),c=o.useCallback(e=>{a(e),localStorage.setItem(t,e)},[t]);return[s,c]};export{h as u};

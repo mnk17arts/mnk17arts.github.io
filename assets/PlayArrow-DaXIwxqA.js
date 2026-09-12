@@ -1,0 +1,1 @@
+import{r as i,g as l}from"./index-Ce6gr0I0.js";import{r as n,a as s}from"./createSvgIcon-Cowcg-tz.js";var r={},e;function f(){if(e)return r;e=1;var a=n();Object.defineProperty(r,"__esModule",{value:!0}),r.default=void 0;var t=a(s()),o=i(),u=(0,t.default)((0,o.jsx)("path",{d:"M8 5v14l11-7z"}),"PlayArrow");return r.default=u,r}var v=f();const P=l(v);export{P};
